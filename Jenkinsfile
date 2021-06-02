@@ -22,6 +22,7 @@ pipeline {
         stage('testing') {
             steps {
              echo 'This is testing stage'
+                 echo 'This is testing stage 2'
             }
           }
         stage('Build second job') {
