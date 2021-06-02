@@ -19,6 +19,11 @@ pipeline {
             }
           }
         
+        stage('testing') {
+            steps {
+             echo 'This is testing stage'
+            }
+          }
         stage('Build second job') {
             steps {
             build quietPeriod: 5, job: 'testjob1'
